@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			);
 		}
 		document.getElementById(pageName).classList.remove('hidden');
-		elmnt.classList.add('active', 'border-b-[3px]', 'border-[#FF6129]', 'text-[#FF6129]');
+		elmnt.classList.add('active', 'border-b-[3px]', 'border-[#FFCC31]', 'text-[#FFCC31');
 		// elmnt.classList.add("active", "bg-btn-black", "text-white");
 	};
 
