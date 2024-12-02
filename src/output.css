@@ -611,6 +611,10 @@ video {
   margin-top: 2px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -628,6 +632,13 @@ video {
 
 .hidden {
   display: none;
+}
+
+.size-max {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .h-6 {
@@ -664,6 +675,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .max-h-0 {
@@ -732,6 +747,10 @@ video {
   width: max-content;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -754,6 +773,10 @@ video {
 
 .max-w-\[1280px\] {
   max-width: 1280px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .shrink-0 {
@@ -814,6 +837,10 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -832,6 +859,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -906,6 +937,10 @@ video {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1055,6 +1090,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#FED6AD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 214 173 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1147,6 +1187,10 @@ video {
 
 .p-\[8px_16px\] {
   padding: 8px 16px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -1396,6 +1440,21 @@ video {
   color: rgb(17 26 37 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#FFFFFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-teal-600 {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity, 1));
+}
+
 .shadow-\[0_17px_30px_0_\#0D051D0A\] {
   --tw-shadow: 0 17px 30px 0 #0D051D0A;
   --tw-shadow-colored: 0 17px 30px 0 var(--tw-shadow-color);
@@ -1502,6 +1561,12 @@ video {
 
 .has-\[\.hide\]\:bg-transparent:has(.hide) {
   background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
