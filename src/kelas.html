@@ -1,89 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Katalog Kelas</title>
-</head>
-<body>
-
-    <nav class="max-w-[1280] w-full flex flex-col pb-[14px] bg-[#1D2530] shadow-lg fixed">
-        <!-- Desktop Nav -->
-        <div class="hidden lg:flex justify-between items-center pt-3 px-[84px]">
-            <a href="">
-                <img src="assets/logo/educo.svg" alt="logo">
-            </a>
-            <ul class="flex items-center gap-[30px]">
-                <li>
-                    <a href="index.html" class="font-semibold text-[#FFFFFF8C] hover:text-slate-100">Beranda</a>
-                </li>
-                <li>
-                    <a href="kelas.html" class="font-semibold text-white">Kelas</a>
-                </li>
-                <li>
-                    <a href="harga.html" class="font-semibold text-[#FFFFFF8C] hover:text-slate-100">Harga</a>
-                </li>
-            </ul>
-            <div class="flex gap-[10px] items-center">
-                <a href=""
-                    class="text-[#FFCC31] font-semibold rounded-[30px] p-[12px_32px] ring-1 ring-[#FFCC31] transition-all duration-300 hover:ring-2 hover:ring-[#ECCF13]">Daftar</a>
-                <a href="login.html"
-                    class="text-black font-semibold rounded-[30px] p-[12px_32px] bg-[#FFCC31] transition-all duration-300 hover:shadow-[0_5px_10px_0_#FFCC31]">Masuk</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Katalog Kelas</title>
+    </head>
+    <body>
+        <nav
+            class="max-w-[1280] w-full flex flex-col pb-[14px] bg-[#1D2530] shadow-lg fixed">
+            <!-- Desktop Nav -->
+            <div
+                class="hidden lg:flex justify-between items-center pt-3 px-[84px]">
+                <a href="">
+                    <img src="assets/logo/educo.svg" alt="logo" />
+                </a>
+                <ul class="flex items-center gap-[30px]">
+                    <li>
+                        <a
+                            href="index.html"
+                            class="font-semibold text-[#FFFFFF8C] hover:text-slate-100"
+                            >Beranda</a
+                        >
+                    </li>
+                    <li>
+                        <a href="kelas.html" class="font-semibold text-white"
+                            >Kelas</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="harga.html"
+                            class="font-semibold text-[#FFFFFF8C] hover:text-slate-100"
+                            >Harga</a
+                        >
+                    </li>
+                </ul>
+                <div class="flex gap-[10px] items-center">
+                    <a
+                        href=""
+                        class="text-[#FFCC31] font-semibold rounded-[30px] p-[12px_32px] ring-1 ring-[#FFCC31] transition-all duration-300 hover:ring-2 hover:ring-[#ECCF13]"
+                        >Daftar</a
+                    >
+                    <a
+                        href="login.html"
+                        class="text-black font-semibold rounded-[30px] p-[12px_32px] bg-[#FFCC31] transition-all duration-300 hover:shadow-[0_5px_10px_0_#FFCC31]"
+                        >Masuk</a
+                    >
+                </div>
             </div>
-        </div>
-    
-        <!-- Mobile Nav -->
-        <div class="lg:hidden flex justify-between items-center px-4 py-3">
-            <a href="">
-                <img src="assets/logo/educo.svg" alt="logo" class="w-24">
-            </a>
-            <button class="text-white" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16" />
-                </svg>
-            </button>
-        </div>
-    
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-[#2D2D2D] px-4 py-2">
-            <ul class="flex flex-col gap-4">
-                <li>
-                    <a href="" class="font-semibold text-slate-100">Beranda</a>
-                </li>
-                <li>
-                    <a href="" class="font-semibold text-slate-300 hover:text-slate-100">Kelas</a>
-                </li>
-                <li>
-                    <a href="" class="font-semibold text-slate-300 hover:text-slate-100">Harga</a>
-                </li>
-                <li>
-                    <a href="" class="font-semibold text-slate-300 hover:text-slate-100">Testimoni</a>
-                </li>
-            </ul>
-            <div class="flex flex-col gap-3 mt-4">
-                <a href=""
-                    class="text-[#FFCC31] font-semibold rounded-[30px] p-[12px_32px] ring-1 ring-[#FFCC31] transition-all duration-300 hover:ring-2 hover:ring-[#ECCF13] text-center">Daftar</a>
-                <a href=""
-                    class="text-black font-semibold rounded-[30px] p-[12px_32px] bg-[#FFCC31] transition-all duration-300 hover:shadow-[0_3px_5px_0_#FFCC31] text-center">Masuk</a>
-            </div>
-        </div>
-    </nav>
 
-    <section id="hero-section" class="max-w-[1200px] mx-auto flex flex-col p-[138px_164px] gap-[30px] bg-[11a25]">
-        <div class="small-badge flex flex-row bg-white rounded-full">
-            <img src="assets/icon/star.svg" alt="icon">
-        </div>
-        <p>lorem</p>
-    </section>
-    
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-    
-</body>
+            <!-- Mobile Nav -->
+            <div class="lg:hidden flex justify-between items-center px-4 py-3">
+                <a href="">
+                    <img src="assets/logo/educo.svg" alt="logo" class="w-24" />
+                </a>
+                <button class="text-white" onclick="toggleMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-6 h-6">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16m-16 6h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                id="mobileMenu"
+                class="hidden lg:hidden bg-[#2D2D2D] px-4 py-2">
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <a href="" class="font-semibold text-slate-100"
+                            >Beranda</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="font-semibold text-slate-300 hover:text-slate-100"
+                            >Kelas</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="font-semibold text-slate-300 hover:text-slate-100"
+                            >Harga</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="font-semibold text-slate-300 hover:text-slate-100"
+                            >Testimoni</a
+                        >
+                    </li>
+                </ul>
+                <div class="flex flex-col gap-3 mt-4">
+                    <a
+                        href=""
+                        class="text-[#FFCC31] font-semibold rounded-[30px] p-[12px_32px] ring-1 ring-[#FFCC31] transition-all duration-300 hover:ring-2 hover:ring-[#ECCF13] text-center"
+                        >Daftar</a
+                    >
+                    <a
+                        href=""
+                        class="text-black font-semibold rounded-[30px] p-[12px_32px] bg-[#FFCC31] transition-all duration-300 hover:shadow-[0_3px_5px_0_#FFCC31] text-center"
+                        >Masuk</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <section
+            id="hero-section"
+            class="max-w-[1200px] mx-auto flex flex-col p-[138px_164px] gap-[30px] bg-[11a25]">
+            <div class="small-badge flex flex-row bg-white rounded-full">
+                <img src="assets/icon/star.svg" alt="icon" />
+            </div>
+            <p>lorem</p>
+        </section>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('mobileMenu');
+                menu.classList.toggle('hidden');
+            }
+        </script>
+    </body>
 </html>
